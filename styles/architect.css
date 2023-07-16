@@ -99,12 +99,34 @@
   .teams-title .quick-list{
     font-weight: 500;
   }
-.teams-title .feature{
+  .teams-title .feature{
     color: #FF900E;
     font-weight: 700;
   }
 
+  /* facts section */
 
+  .facts-card-con{
+    display: flex;
+    justify-content: space-around;
+  }
+  .facts-card-con .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px;
+  }
+  .facts-card-con .card-stat{
+    font-size: 2.5rem;
+    color: #424242;
+    margin: 10px 0;
+  }
+  .facts-card-con .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+  }
 
 
    /* responsive media queries */
