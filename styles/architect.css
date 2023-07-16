@@ -4,9 +4,25 @@
 
   *{
     font-family: 'Work Sans', sans-serif;
-    padding: 0;
-    margin: 0;
+    
   }
+  body 
+  { 
+    overflow-x: hidden;
+  }
+  .btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+
   /* header styles */
   header{
     background: rgba(255, 144, 14, 0.10);
@@ -48,4 +64,30 @@
   }
   .banner-description{
     color: #727272;
+  }
+  .banner img{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+
+  /* responsive media queries */
+  /* mobile devices */
+  @media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+  }
+  /* medium or tablet devices  */
+  @media screen and (min-width:577px) and (max-width:960px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
   }
