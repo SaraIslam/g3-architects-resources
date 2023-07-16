@@ -180,7 +180,13 @@
   .sponsor-img-con img{
     width: 165px;
   }
-
+  footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 240px;
+    text-align: center;
+    padding: 40px 0;
+  }
 
   /* responsive media queries */
   /* mobile devices */
@@ -222,7 +228,12 @@
     .facts-card-con{
       gap:20px
     }
+    footer{
+      margin: 10px;
+      padding: 10px 0;
+    }
   }
+  
   /* medium or tablet devices  */
   @media screen and (min-width:577px) and (max-width:960px){
     header{
@@ -249,6 +260,10 @@
       display: flex;
       flex-wrap: wrap;
       gap:20px
+    }
+    footer{
+      margin: 40px;
+      padding: 20px 0;
     }
  
   }
