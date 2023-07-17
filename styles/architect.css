@@ -4,8 +4,11 @@
 
   *{
     font-family: 'Work Sans', sans-serif; 
+    margin: 0;
   }
- 
+  body { 
+    overflow-x: hidden; 
+  }
   .btn-primary{
     border-radius: 8px;
     background: #FF900E;
@@ -73,21 +76,19 @@
 
   /* main Styles */
   main{
-    max-width: 1440px;
-    margin: 70px auto;
+    margin: 70px 200px ;
+    
   }
 
   /* teams styles */
   .teams-con{
     display: flex;
     align-items: center;
-    
   }
   .teams-content{
-    padding: 0 70px;
+    padding: 0 30px;
   }
-  .teams-img-con{
-    
+  .teams-img-con{   
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.4rem;
@@ -99,7 +100,7 @@
   .teams-title .quick-list{
     font-weight: 500;
   }
-  .teams-title .feature{
+  .teams-title .text-feature{
     color: #FF900E;
     font-weight: 700;
   }
@@ -122,8 +123,9 @@
     padding-left: 20px;
   }
   .feature-img img{
-    height: 90%;
-    margin-left: 70px;
+    height: 80%;
+    width: 120%;
+    margin-left:60px;
   }
   .ten-years-badge{
     border-radius: 8px;
@@ -144,7 +146,7 @@
     margin: 0;
   }
   /* facts section */
-
+  
   .facts-card-con{
     display: flex;
     justify-content: space-around;
@@ -191,6 +193,10 @@
   /* responsive media queries */
   /* mobile devices */
   @media screen and (max-width:576px) {
+    main{
+      margin: 70px 0;
+      
+    }
     header{
         padding: 20px;
     }
@@ -205,6 +211,8 @@
     .feature{
         flex-direction: column;
     }
+   
+  
     .teams-img-con{
         grid-template-columns: 1fr;
       }
@@ -216,11 +224,11 @@
     }
     .feature-img img{
       width: 90%;
-      margin-left: 0;
+      margin-left: 5px;
     }
     .ten-years-badge{
       position: static;
-      width: 250px;
+      width: 230px;
     }
     .ten-years-badge h2{
       font-size: 3rem;
@@ -229,13 +237,17 @@
       gap:20px
     }
     footer{
-      margin: 10px;
+      margin: 0px;
       padding: 10px 0;
     }
   }
   
   /* medium or tablet devices  */
   @media screen and (min-width:577px) and (max-width:960px){
+    main{
+      margin: 70px 0 ;
+      
+    }
     header{
         padding: 50px;
     }
@@ -260,6 +272,10 @@
       display: flex;
       flex-wrap: wrap;
       gap:20px
+    }
+    .feature-img img{
+      width: 90%;
+      margin-left: 50px;
     }
     footer{
       margin: 40px;
